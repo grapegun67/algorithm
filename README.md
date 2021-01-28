@@ -1,2 +1,2 @@
-# data-strucure
-data strucure
+# data-structure
+data structure
