@@ -29,8 +29,8 @@ void quick(int low, int high, int arr[])
 {
 
 	if (high <= low) return;
-	if (high <= 0) return;
-	if (low >= ARRSIZE) return;
+	//if (high <= 0) return;
+	//if (low >= ARRSIZE) return;
 
 
 	int tmp_low = low;
