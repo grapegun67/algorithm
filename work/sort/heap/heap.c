@@ -55,10 +55,11 @@ void delete(Heaptype* Heap)
 		if (tmp_heap[tmp_loc * 2] >= tmp_heap[tmp_loc * 2 + 1]) max_loc = tmp_loc * 2;
 		else if (tmp_heap[tmp_loc * 2] < tmp_heap[tmp_loc * 2 + 1]) max_loc = tmp_loc * 2 + 1;
 
-																	if (tmp_heap[tmp_loc] < tmp_heap[max_loc]) {
-																		SWAP(&tmp_heap[tmp_loc], &tmp_heap[max_loc]);
-			tmp_loc = max_loc;												}
-																	else break;
+		if (tmp_heap[tmp_loc] < tmp_heap[max_loc]) {
+			SWAP(&tmp_heap[tmp_loc], &tmp_heap[max_loc]);
+			tmp_loc = max_loc;
+		}
+		else break;
 	}
 
 	Heap->heapsize--;
